@@ -13,7 +13,7 @@ export class CadastrarComponent implements OnInit {
 
   usuario: Usuario = new Usuario ();
   confirmarSenha: string 
-  tipoUsario: string
+  tipoUsuario: string
 
   constructor(
   private authService: AuthService,
@@ -34,11 +34,11 @@ export class CadastrarComponent implements OnInit {
   }
 
   tipoUser(event: any){
-    this.tipoUsario = event.target.value
+    this.tipoUsuario = event.target.value
   }
 
   cadastrar(){
-this.usuario.tipo = this.tipoUsario
+this.usuario.tipo = this.tipoUsuario
 
 if(this.usuario.senha != this.confirmarSenha){
 alert("As senhas estão incorretas!")
