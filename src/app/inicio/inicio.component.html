@@ -90,7 +90,8 @@
                   {{item.data | date: 'dd/MM/yyyy' }} às {{item.data | date: 'HH:mm'}}
                 </small></p>
   
-              
+               <button class="btn btn-success mr-3" [routerLink]="['/postagem-edit', item.id]">Editar</button>
+              <button class="btn btn-danger" [routerLink]="['/postagem-delete', item.id]">Apagar</button>
   
               </div>
             </div>

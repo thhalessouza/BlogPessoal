@@ -43,12 +43,14 @@ export class AuthService {
   }
 
   logado(){
-    let ok: boolean = false 
+    let ok: boolean = false ;
+
     if(environment.token != ''){
-      ok = true
+      ok = true ;
+
     }
-    return ok 
+    return ok ;
   }
 }
 
-// https://thhalessouzablogpessoal.herokuapp.com/
+//*https://thhalessouzablogpessoal.herokuapp.com/
